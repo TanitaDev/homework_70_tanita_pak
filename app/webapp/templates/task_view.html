@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ task.summary }}{% endblock %}
+{% block todo_block %}
+<div class="task_block">
+     <div class="todo_head">
+        <div class="head_block">
+            <h2 class="task_title task_icon">{{ task.summary }} <a href="{% url 'edit' task.pk %}"><i class="fa-solid fa-pen-to-square"></i><span>редактировать</span></a></h2>
+        </div>
+    </div>
+    <div class="todo_body">
+        <div class="task_body">
+            <p>{{ task.description }}</p>
+            <div class="task_footer">
+                <p><b>Статус: </b>{{ task.status }}</p>
+                <p><b>Тип: </b>{{ task.type }}</p>
+                <p><b>Создано: </b>{{ task.created_at }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

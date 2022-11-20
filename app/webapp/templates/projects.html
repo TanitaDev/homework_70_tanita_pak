@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Задачи{% endblock %}
+{% block todo_block %}
+<div class="todo_head">
+    <div class="head_block">
+        <h2 class="task_title">Проекты</h2>
+    </div>
+</div>
+<div class="todo_body">
+    {% for p in projects %}
+    <ul class="project_tasks_item dashed">
+        <p class="project_title">{{ p.name }}</p>
+        <p class="task_label">Задачи:</p>
+        {% for task in p.project.all %}
+        <li class="tasks_list_item">
+            <a class="task_trash_icon" href="{% url 'delete' task.pk %}"><i class="fa-solid fa-trash"></i></a>
+            <a class="task_item" href="{% url 'task_view' task.pk %}">{{ task.summary }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>
+{% endblock %}

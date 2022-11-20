@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Редактировать{% endblock %}
+{% block todo_block %}
+<div class="todo_head">
+    <div class="head_block">
+        <h2 class="task_title">Редактировать задачу</h2>
+    </div>
+</div>
+<div class="todo_body">
+    <form class="todo_form" action="{% url 'edit' task.pk %}" method="post">
+        {% include 'partial/task_form.html' with btn_text='Редактировать' %}
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,320 @@
+[
+{
+  "model": "webapp.task",
+  "pk": 1,
+  "fields": {
+    "summary": "Сделать дз №57",
+    "description": "сделать домашнее задание №57. Доделать 2, 3 этап",
+    "status": 2,
+    "type": 1,
+    "created_at": "2022-10-06T17:15:35.731Z",
+    "updated_at": "2022-10-19T12:10:26.233Z",
+    "project": 1,
+    "is_deleted": true
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 2,
+  "fields": {
+    "summary": "Уборка",
+    "description": "Убраться дома до 18.00",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-10-06T17:16:15.216Z",
+    "updated_at": "2022-10-19T12:13:22.442Z",
+    "project": 1,
+    "is_deleted": true
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 3,
+  "fields": {
+    "summary": "Чистка ПК",
+    "description": "Очистить ПК от лишнего",
+    "status": 3,
+    "type": 3,
+    "created_at": "2022-10-06T17:16:47.854Z",
+    "updated_at": "2022-10-19T12:13:27.074Z",
+    "project": 1,
+    "is_deleted": true
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 5,
+  "fields": {
+    "summary": "Документы",
+    "description": "Забрать документы с нотариуса",
+    "status": 1,
+    "type": 1,
+    "created_at": "2022-10-06T17:18:10.855Z",
+    "updated_at": "2022-10-19T12:19:06.867Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 6,
+  "fields": {
+    "summary": "Доделать дз 59",
+    "description": "описание дз 59",
+    "status": 2,
+    "type": 1,
+    "created_at": "2022-10-18T22:50:22.943Z",
+    "updated_at": "2022-10-18T22:50:22.943Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 7,
+  "fields": {
+    "summary": "Установить линукс",
+    "description": "поставить линукс второй системой (или основной)",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-10-18T22:51:32.054Z",
+    "updated_at": "2022-10-18T22:51:32.054Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 9,
+  "fields": {
+    "summary": "базовые представления",
+    "description": "разобрать базовые представления лучше",
+    "status": 1,
+    "type": 1,
+    "created_at": "2022-10-18T22:52:39.443Z",
+    "updated_at": "2022-10-18T22:52:39.443Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 10,
+  "fields": {
+    "summary": "Чтение книги",
+    "description": "Прочитать книгу \"Чистый код\"",
+    "status": 2,
+    "type": 3,
+    "created_at": "2022-10-18T22:54:18.884Z",
+    "updated_at": "2022-10-19T12:10:14.947Z",
+    "project": 1,
+    "is_deleted": true
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 11,
+  "fields": {
+    "summary": "Сон",
+    "description": "поменять режим сна",
+    "status": 2,
+    "type": 3,
+    "created_at": "2022-10-18T23:07:28.992Z",
+    "updated_at": "2022-10-18T23:07:28.992Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 13,
+  "fields": {
+    "summary": "ООП",
+    "description": "подтяуть ООП (миксины)",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-10-18T23:09:51.560Z",
+    "updated_at": "2022-10-18T23:09:51.560Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 14,
+  "fields": {
+    "summary": "БД",
+    "description": "повторно разобрать темы БД",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-10-18T23:10:17.697Z",
+    "updated_at": "2022-10-18T23:10:17.697Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 16,
+  "fields": {
+    "summary": "инициализировать проект джанго",
+    "description": "инициализировать проект джанго для проекта №61",
+    "status": 1,
+    "type": 1,
+    "created_at": "2022-10-19T10:37:02.662Z",
+    "updated_at": "2022-10-19T10:37:02.662Z",
+    "project": 2,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 17,
+  "fields": {
+    "summary": "ДЗ 59 (3й этап)",
+    "description": "доделать 3й этап",
+    "status": 2,
+    "type": 3,
+    "created_at": "2022-10-19T11:37:24.005Z",
+    "updated_at": "2022-10-19T11:37:24.005Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 18,
+  "fields": {
+    "summary": "Сделать дз №58",
+    "description": "сделать домашнее задание №58. Доделать 2, 3 этап",
+    "status": 2,
+    "type": 1,
+    "created_at": "2022-10-19T11:41:41.116Z",
+    "updated_at": "2022-10-19T12:10:08.410Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 19,
+  "fields": {
+    "summary": "Прогулка",
+    "description": "Чаще гулять",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-10-19T12:15:09.385Z",
+    "updated_at": "2022-10-19T12:15:09.385Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 20,
+  "fields": {
+    "summary": "DPI",
+    "description": "Настроить dpi на мышке",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-10-19T21:31:38.347Z",
+    "updated_at": "2022-10-19T21:31:38.347Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 21,
+  "fields": {
+    "summary": "Дисплей",
+    "description": "Настроить цветопередачу на экране монитора",
+    "status": 1,
+    "type": 3,
+    "created_at": "2022-10-19T21:32:18.509Z",
+    "updated_at": "2022-10-19T21:32:18.509Z",
+    "project": 1,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 1,
+  "fields": {
+    "name": "новый"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 2,
+  "fields": {
+    "name": "в процессе"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 3,
+  "fields": {
+    "name": "выполнено"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 1,
+  "fields": {
+    "name": "задача"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 2,
+  "fields": {
+    "name": "ошибка"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 3,
+  "fields": {
+    "name": "улучшение"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 1,
+  "fields": {
+    "start_date": "2022-10-18",
+    "finish_date": null,
+    "name": "Общий проект",
+    "description": "Добавление базовых классовых представлений и новой модели - Проект"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 2,
+  "fields": {
+    "start_date": "2022-10-18",
+    "finish_date": null,
+    "name": "Проект №61",
+    "description": "сделать аутентификацию"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$IDCaRO0j5WgNcGxil0NITw$DXpno5GcTFyQpvzxE8vc31QBtHQNLORiZ1x/1/lxzpg=",
+    "last_login": "2022-10-18T23:17:17.144Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-06T17:11:46.678Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
