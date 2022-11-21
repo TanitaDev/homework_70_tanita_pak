@@ -6,13 +6,6 @@ from api.serializer import TaskSerializer
 from webapp.models import Task
 
 
-class TaskView(APIView):
-    def get(self, request, *args, **kwargs):
-        objects = Task.objects.all()
-        serializer = TaskSerializer(objects, many=True)
-        return Response(serializer.data)
-
-
 class TaskDetailView(APIView):
     def get(self, request, pk):
         task = get_object_or_404(Task, pk=pk)
@@ -22,13 +15,14 @@ class TaskDetailView(APIView):
 
 class TaskUpdateView(APIView):
     def put(self, request, *args, **kwargs):
-        pk = kwargs.get("pk", None)
-        task = Task.objects.get(pk=pk)
+        object = get_object_or_404(Task, pk=kwargs.get('pk'))
 
-        serializer = TaskSerializer(data=request.data, instance=task)
+        serializer = TaskSerializer(object, data=request.data)
         if serializer.is_valid():
             task = serializer.save()
             return Response(serializer.data)
+        else:
+            return Response(serializer.errors, status=400)
 
 
 class TaskDeleteView(APIView):
@@ -38,4 +32,6 @@ class TaskDeleteView(APIView):
         task.delete()
         if serializer.is_valid():
             task = serializer.save()
-            return Response(serializer.data['pk'])
+            return Response(serializer.data)
+        else:
+            return Response(serializer.errors, status=404)
