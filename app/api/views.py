@@ -32,6 +32,6 @@ class TaskDeleteView(APIView):
         task.delete()
         if serializer.is_valid():
             task = serializer.save()
-            return Response(serializer.data)
+            return Response(data={"id": task.id})
         else:
             return Response(serializer.errors, status=404)
